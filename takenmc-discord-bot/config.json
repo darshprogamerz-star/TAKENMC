@@ -1,0 +1,39 @@
+{
+  "serverName": "TakenMC",
+  "java": {
+    "host": "takenmc.mcsh.gg",
+    "port": 25565
+  },
+  "bedrock": {
+    "host": "takenmc.mcsh.gg",
+    "port": 19132
+  },
+  "theme": {
+    "online": "#2ECC71",
+    "offline": "#E74C3C",
+    "default": "#2B2D31"
+  },
+  "statusCacheSeconds": 30,
+  "refreshCooldownSeconds": 10,
+  "requestTimeoutMs": 8000,
+  "rules": [
+    "No hacking, cheating, or exploiting bugs.",
+    "Do not grief or steal from other players.",
+    "Respect all players and staff.",
+    "No spam, unsolicited advertising, or malicious links.",
+    "No abusive, hateful, or harassing language.",
+    "Staff decisions are final; appeal respectfully if needed."
+  ],
+  "voteLinks": [
+    {
+      "name": "Vote Site 1 (replace this link)",
+      "url": "https://example.com/replace-with-your-vote-link"
+    },
+    {
+      "name": "Vote Site 2 (replace this link)",
+      "url": "https://example.com/replace-with-your-vote-link"
+    }
+  ],
+  "voteRewards": "Vote karke in-game rewards pao! Replace the example vote links with your real voting pages.",
+  "footerText": "TakenMC"
+}
