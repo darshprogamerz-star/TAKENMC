@@ -56,7 +56,7 @@ GUILD_ID=your_test_server_id_optional
 
 `GUILD_ID` is optional. When present, slash commands register only in that server and update quickly. When empty, commands register globally, and Discord may take time to propagate them.
 
-Edit `config.json` to change server details, theme colors, cache/cooldown values, rules, voting links, or reward copy. The supplied vote URLs are clearly marked example links; replace them before sharing `/vote` with players. Current connection values are Java `takenmc.mcsh.gg:25565` and Bedrock `takenmc.mcsh.gg:19132`.
+Edit `config.json` to change server details, theme colors, cache/cooldown values, rules, voting links, or reward copy. The `/vote` command currently has one configured vote link for TakenMC on Minecraft Server List. Current connection values are Java `takenmc.mcsh.gg:25565` and Bedrock `takenmc.mcsh.gg:19132`.
 
 ## 4. Register slash commands
 

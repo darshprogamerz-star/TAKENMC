@@ -26,14 +26,10 @@
   ],
   "voteLinks": [
     {
-      "name": "Vote Site 1 (replace this link)",
-      "url": "https://example.com/replace-with-your-vote-link"
-    },
-    {
-      "name": "Vote Site 2 (replace this link)",
-      "url": "https://example.com/replace-with-your-vote-link"
+      "name": "Vote for TakenMC on Minecraft Server List",
+      "url": "https://minecraft-server-list.com/server/525293/"
     }
   ],
-  "voteRewards": "Vote karke in-game rewards pao! Replace the example vote links with your real voting pages.",
+  "voteRewards": "Vote karke in-game rewards pao!",
   "footerText": "TakenMC"
 }
