@@ -89,7 +89,13 @@ pm2 save
 pm2 startup
 ```
 
-Run the command printed by `pm2 startup` to enable startup on reboot. Other options include a VPS, Railway, or Render. Use a persistent Node worker/service, configure the environment variables in the provider dashboard, and do not upload `.env` or expose the bot token.
+Run the command printed by `pm2 startup` to enable startup on reboot.
+
+### Render Web Service
+
+This bot also starts a tiny native HTTP health endpoint so it can run as a Render **Web Service**. In Render, connect this repository, choose branch `main`, leave **Root Directory** blank, set build command to `npm install`, and start command to `npm start`. Add `DISCORD_TOKEN` and `CLIENT_ID` under **Environment**; `GUILD_ID` is optional. Set the health check path to `/health` if Render asks for one. No `PORT` variable is needed; Render supplies it automatically. Run `npm run deploy` once from a terminal with the same Discord IDs to register slash commands.
+
+Render's free Web Services can spin down after 15 minutes without inbound traffic, so a Discord bot may go offline while idle. An external uptime monitor can request `https://YOUR-SERVICE.onrender.com/health` every 5–10 minutes to keep it active, but this is not a guaranteed 24/7 setup. For reliable always-on hosting, use a paid always-on Web Service/Background Worker or a VPS. Keep secrets in Render's environment settings and never upload `.env`.
 
 ## 7. Test commands
 
